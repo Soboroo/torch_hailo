@@ -42,6 +42,9 @@ napoleon_numpy_docstring = True
 
 intersphinx_mapping = {
     "python": ("https://docs.python.org/3", None),
-    "torch": ("https://pytorch.org/docs/stable", None),
+    "torch": ("https://docs.pytorch.org/docs/stable", None),
     "numpy": ("https://numpy.org/doc/stable", None),
 }
+
+# Project Pages URL: https://<user>.github.io/torch_hailo/
+html_baseurl = "https://soboroo.github.io/torch_hailo/"

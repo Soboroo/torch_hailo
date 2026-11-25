@@ -59,3 +59,11 @@ make clean
 ```
 
 `_build/` is gitignored and should not be committed.
+
+## GitHub Pages
+
+On every relevant push to `main`, [`.github/workflows/docs.yml`](../.github/workflows/docs.yml) builds this tree and deploys to:
+
+https://soboroo.github.io/torch_hailo/
+
+You can also run the **docs** workflow manually from the Actions tab (`workflow_dispatch`). Hailo SDK is not required for the docs build; only PyTorch CPU wheels and autodoc imports are used.

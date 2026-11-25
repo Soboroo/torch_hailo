@@ -6,14 +6,17 @@ Compile a PyTorch model to a Hailo HEF with the [PyTorch 2 Export PTQ](https://d
 
 ## Documentation
 
-Usage guides and the API reference live under [`docsrc/`](docsrc/), in the same style as [torch_tensorrt/docsrc](https://github.com/pytorch/TensorRT/tree/main/docsrc). Build the HTML site with:
+- Published site (GitHub Pages): https://soboroo.github.io/torch_hailo/
+- Sources: [`docsrc/`](docsrc/) (same layout idea as [torch_tensorrt/docsrc](https://github.com/pytorch/TensorRT/tree/main/docsrc))
+
+Build locally:
 
 ```bash
 pip install -r docsrc/requirements.txt
 sphinx-build -b html docsrc docsrc/_build/html
 ```
 
-Then open `docsrc/_build/html/index.html`.
+Then open `docsrc/_build/html/index.html`. See [`docsrc/README.md`](docsrc/README.md) for details. Pushing to `main` (under `docsrc/`, `src/torch_hailo/`, or the docs workflow) rebuilds and deploys Pages.
 
 This repository does not redistribute Hailo software. Installers (`*.run`), Dataflow Compiler wheels, HailoRT, drivers (`*.deb`), and an extracted `hailo_ai_sw_suite/` are excluded from Git and source distributions. Install the suite yourself from the [Hailo Developer Zone](https://hailo.ai/developer-zone/).
 
