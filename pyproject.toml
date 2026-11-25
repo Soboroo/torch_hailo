@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "torch-hailo"
+version = "0.1.0"
+description = "PyTorch 2 Export PTQ flow and Hailo NPU lowering"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.6",
+    "torchao",
+    "numpy",
+    "onnx",
+    "onnxscript",
+]
+
+[tool.setuptools]
+# Package code only. Do not pull Hailo binaries in from the source tree.
+include-package-data = false
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["torch_hailo*"]

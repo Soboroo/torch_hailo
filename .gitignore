@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+
+# Local virtual environments
+.venv/
+venv/
+hailo_venv/
+
+# Hailo proprietary assets. Do not commit or redistribute these.
+hailo_ai_sw_suite/
+*.run
+*.whl
+*.deb
+
+# Build products and installer / runtime logs
+*.hef
+*.har
+*.onnx
+*.log
+suite_installation.log
+system_reqs_results.log
+system_reqs_table.log
+
+# Sphinx
+docsrc/_build/
+docs/_build/

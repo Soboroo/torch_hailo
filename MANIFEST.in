@@ -1,0 +1,20 @@
+# Ship only this project's source. Hailo installers, wheels, debs, and the
+# extracted software suite are proprietary and must not be redistributed.
+include README.md
+include pyproject.toml
+recursive-include src *.py
+recursive-include tests *.py
+recursive-include docsrc *
+recursive-include .github *.yml
+prune docsrc/_build
+
+prune hailo_ai_sw_suite
+prune .venv
+prune venv
+prune hailo_venv
+
+global-exclude *.run
+global-exclude *.whl
+global-exclude *.deb
+global-exclude *.hef
+global-exclude *.har
